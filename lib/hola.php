@@ -1,6 +1,7 @@
 <?php
     // Autor: Denys Petrychenko <denyspetrychenko@gmail.com>
     // El nombre por defecto es Mundo
-    $nombre = isset($argv[1]) ? $argv[1] : "Mundo";
+    print "Introduce tu nombre:";
+    $nombre = trim(fgets(STDIN));
     @print "Hola, {$nombre}\n";
 ?>
